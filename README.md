@@ -1,5 +1,5 @@
 # Password Generator
-[![OpenSource](https://forthebadge.com/images/badges/open-source.svg)](https://opensource.com/)
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://opensource.org/)
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://en.wikipedia.org/wiki/HTML)
 
