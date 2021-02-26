@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Password Generator!">
+      <meta name="author" content="MattLawz">
+      <link rel="icon" href="./assets/images/favicon.png">
+      <title>Password Generator</title>
+      <style>@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');;</style>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+      <link href="./assets/css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <h1>Password Generator</h1>
+      <div class="container mt-5">
+         <div class="row justify-content-center">
+            <div class="input-field col-12 col-sm-12 col-md-8 col-lg-6">
+               <form action="" name="passGen">
+                  <div class="form-group">
+                     <input type="number" class="form-control inpt" id="pwd" name="length" placeholder="Password Length (Over 12 Is Most Secure)" value="">
+                     <br>
+                     <input type="text" class="form-control" name="output" id="output" placeholder="Password" value="">
+                     <br>
+                     <button class="btn btn-outline-primary" type="button" onclick="populateForm(this.form.length.value)">Generate Password</button>
+                     <br>
+                     <br>
+                     <button class="btn btn-outline-primary" type="button" id="btn_copy" onclick="copy()">Copy Password</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <script>
+         function copy() {
+           var copyText = document.getElementById("output");
+           copyText.select();
+           copyText.setSelectionRange(0, 99999)
+           document.execCommand("copy");
+           alert("Copied Password");
+         }
+      </script>
+      <script src="./assets/js/generatorscript.js"></script>  
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+   </body>
+</html>
