@@ -17,3 +17,8 @@ ____
 ### Project Info
 This is a password generator website, all you do is put in how long you want the password to be, then click generate. It will automatically generate a password for you.
 ____
+### Links
+
+[Main Link](https://pw-gen.xyz)
+
+[Backup Link](https://pw-genxyz.netlify.app)
