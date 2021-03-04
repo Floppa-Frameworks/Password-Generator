@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
    <head>
@@ -17,7 +18,7 @@
       <div class="container mt-5">
          <div class="row justify-content-center">
             <div class="input-field col-12 col-sm-12 col-md-8 col-lg-6">
-               <form action="" name="passGen" onsubmit="return validateForm()" method="post">
+               <form action="" name="passGen">
                   <div class="form-group">
                      <input type="number" class="form-control inpt" id="pwd" name="length" placeholder="Password Length (Over 12 Is Most Secure)" value="">
                      <br>
@@ -27,11 +28,6 @@
                      <br>
                      <br>
                      <button class="btn btn-outline-primary" type="button" id="btn_copy" onclick="copy()">Copy Password</button>
-                    
-                    <button onClick="test()">Generate Captcha</button>
-                    <input type="text" class='enter' name="fname">
-                                 <input type="submit" class='tsol' value="Submit">
-
                   </div>
                </form>
             </div>
@@ -46,38 +42,6 @@
            alert("Copied Password");
          }
       </script>
-              <script defer>
-            captcha_solution = ""
-            function test() {
-                let site = 'https://ammarsysdev.pythonanywhere.com/api/img'
-                fetch(site)
-                .then((response) => response.json())
-                    .then((data) => {
-                        captcha_solution = data['solution']
-                        return data
-                    })
-                    .then((data) => {
-                        var x = document.createElement("img");
-                        x.src = data['url'];
-                        x.alt = "Uh-oh, couldn't load the image :(";
-                        document.body.appendChild(x);
-                    });
-            }
-            function validateForm() {
-                var x = document.forms["passGen"]["fname"].value;
-                if (x == "") {
-                    alert("Form Is Empty...");
-                    return false;
-                    }
-                if (x != captcha_solution) {
-                    alert('Wrong Answer')
-                    return false;
-                    } else {
-                    alert('Correct!')
-                    return true;
-                    }
-                }
-        </script>
       <script src="./assets/js/generatorscript.js"></script>  
       <script async src="https://arc.io/widget.min.js#qjybEwEK"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
