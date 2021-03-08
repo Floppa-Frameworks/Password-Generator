@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://github.com/MattLawz/Password-Generator/blob/main/assets/images/favicon.png?raw=true" alt="Lock" />
-</p>
-
 # Password Generator
 
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://opensource.org/)
