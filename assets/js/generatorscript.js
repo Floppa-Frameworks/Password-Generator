@@ -13,4 +13,4 @@ function populateForm(enterLength) {
     document.passGen.output.value = generatePass(enterLength);
 }
 
-console.log("Your generated password is:" document.passGen.output.value)
+console.log(document.passGen.output.value)
