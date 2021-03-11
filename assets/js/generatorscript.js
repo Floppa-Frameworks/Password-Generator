@@ -12,5 +12,3 @@ function generatePass(passwordLength) {
 function populateForm(enterLength) {
     document.passGen.output.value = generatePass(enterLength);
 }
-
-console.log(document.passGen.output.value)
